@@ -87,10 +87,11 @@ func handlerDropFeed(s *state, cmd command, user database.User) error {
 		return fmt.Errorf("couldn't delete feed follow: %w", err)
 	}
 
-	fmt.Println("%s unfollowed successfully!\n")
+	fmt.Println("unfollowed successfully!")
 
 	return nil
 }
+
 
 func printFeed(feed database.Feed, user database.User) {
 	fmt.Printf("* ID:            %s\n", feed.ID)
