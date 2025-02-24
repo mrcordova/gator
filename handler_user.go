@@ -75,3 +75,5 @@ func printUser(user database.User) {
 	fmt.Printf(" * Name:    %v\n", user.Name)
 }
 
+
+
